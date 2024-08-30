@@ -18,13 +18,20 @@ number of millimeters the ocean level rises per year..
 
 #include <iostream>
 using namespace std;
-const double levelRise = 1.5;
+//const double levelRise = 1.5;
 
 int main()
 {
-    double yearLevel5 = levelRise * 5;
-    double yearLevel7 = levelRise * 7;
-    double yearLevel10 = levelRise * 10;
+    double levelRise;
+    double yearLevel5;
+    double yearLevel7;
+    double yearLevel10;
+    cout << "Please enter the millimeter rise you expect each year:";
+    cin >> levelRise;
+    yearLevel5 = levelRise * 5;
+    yearLevel7 = levelRise * 7;
+    yearLevel10 = levelRise * 10;
+
     cout << "After 5 years the ocean will have risen " << yearLevel5 << " millimeters." << endl;
     cout << "After 7 years the ocean will have risen " << yearLevel7 << " millimeters." << endl;
     cout << "After 10 years the ocean will have risen " << yearLevel10 << " millimeters." << endl;
